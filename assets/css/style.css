@@ -21,12 +21,17 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation:pop-in 2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(227, 223, 255);
+    animation-name: example;
+    animation-duration: 10s;
 
   }
   .splide__slide.is-active {
     opacity: 1;
   }
-  .splide_track{
+  li.splide_track{
     animation:pop-in 2s ease-in-out;
   }
   .splide_list{
@@ -51,6 +56,12 @@
   100% { 
     opacity: 1; transform: scale(1); 
   }
+}
+@keyframes example {
+  0%   {background-color: rgb(255, 195, 155);}
+  25%  {background-color: rgb(253, 182, 135);}
+  50%  {background-color: rgb(241, 119, 119);}
+  100% {background-color: rgb(233, 86, 86);}
 }
   /* ul{
     list-style-type:none;
